@@ -10,4 +10,11 @@ export class AppComponent {
   age = 18;
   img =
     'https://upload.wikimedia.org/wikipedia/commons/b/b4/UEFA_Women%27s_Champions_League_Logo_2.png';
+  btnDisabled = true;
+  person = {
+    name: 'Erick',
+    age: 18,
+    avatar:
+      'https://upload.wikimedia.org/wikipedia/commons/b/b4/UEFA_Women%27s_Champions_League_Logo_2.png',
+  };
 }
