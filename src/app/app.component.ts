@@ -18,6 +18,9 @@ export class AppComponent {
       'https://upload.wikimedia.org/wikipedia/commons/b/b4/UEFA_Women%27s_Champions_League_Logo_2.png',
   };
 
+  names: string[] = ['Nicolas', 'Juli', 'Santi'];
+  newName = '';
+
   toggleButton() {
     this.btnDisabled = !this.btnDisabled;
   }
@@ -34,5 +37,14 @@ export class AppComponent {
   changeName(event: Event) {
     const element = event.target as HTMLInputElement;
     this.person.name = element.value;
+  }
+
+  addName() {
+    this.names.push(this.newName);
+    this.newName = '';
+  }
+
+  deleteName(index: number) {
+    this.names.splice(index, 1);
   }
 }
